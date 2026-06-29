@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Tunely",
+    "slug": "Tunely",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "owner": "capstone-project",
+    "userInterfaceStyle": "light",
+    "privacy": "public",
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/9b99dc7a-5170-47c5-93f1-d7acaaf6146e"
+    },
+    "newArchEnabled": true,
+    "runtimeVersion": "1.0.0",
+    "plugins": [
+      "expo-image-picker",
+      "@react-native-google-signin/google-signin",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ],
+      "expo-asset"
+    ],
+    "splash": {
+      "image": "./assets/tunely_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tunely.app",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio",
+          "audio"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tunely.app",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9b99dc7a-5170-47c5-93f1-d7acaaf6146e"
+      }
+    }
+  }
+}
